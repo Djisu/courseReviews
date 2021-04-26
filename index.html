@@ -36,20 +36,22 @@
                 <ion-card-content>
                   <ion-item>
                     <ion-label position="floating">Course Name</ion-label>
-                    <ion-input type="text"></ion-input>
+                    <ion-input type="text" id="input-reason"></ion-input>
                   </ion-item>
                   <ion-item>
                     <ion-label position="floating">Course Review</ion-label>
-                    <ion-input type="number"></ion-input>
+                    <ion-input type="number" id="input-review"></ion-input>
                   </ion-item>
-                  <ion-button fill="outline" color="danger">
-                    <ion-icon slot="start" name="trash-outline"></ion-icon>
-                    Clear
-                  </ion-button>
-                  <ion-button>
-                    <ion-icon slot="start" name="add-outline"></ion-icon>
-                    Add Review
-                  </ion-button>
+                  <div margin-vertical text-right>
+                    <ion-button fill="outline" color="danger" id="btn-cancel">
+                      <ion-icon slot="start" name="trash-outline"></ion-icon>
+                      Clear
+                    </ion-button>
+                    <ion-button id="btn-confirm">
+                      <ion-icon slot="start" name="add-outline"></ion-icon>
+                      Add Review
+                    </ion-button>
+                  </div>
                 </ion-card-content>
               </ion-card>
             </ion-col>
@@ -57,5 +59,6 @@
         </ion-grid>
       </ion-content>
     </ion-app>
+    <script src="./app.js"></script>
   </body>
 </html>
