@@ -4,6 +4,7 @@ const cancelBtn = document.querySelector('#btn-cancel')
 const confirmBtn = document.querySelector('#btn-confirm')
 const reviewsList = document.querySelector('#reviews-list')
 const totalReviewsOutput = document.querySelector('#total-reviews')
+const alertCtrl = document.querySelector('ion-alert-controller')
 
 let totalReviews = 0
 
@@ -22,6 +23,16 @@ confirmBtn.addEventListener('click', () => {
     enteredReview <= 0 ||
     enteredReview.trim().length <= 0
   ) {
+    /* alertCtrl
+      .create({
+        message: 'Please enter a valid course and review',
+        header: 'Invalid inputs',
+        buttons: ['Ok'],
+      })
+      .then((alertElement) => {
+        alertElement.present()
+      }) */
+      alert('Please enter a valid course and review')
     return
   }
 
