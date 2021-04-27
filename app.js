@@ -30,7 +30,8 @@ confirmBtn.addEventListener('click', () => {
 
   reviewsList.appendChild(newItem)
 
-  totalReviews += enteredReview
+  totalReviews += +enteredReview
+  totalReviewsOutput.textContent = totalReviews
   clear()
 })
 
