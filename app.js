@@ -32,7 +32,7 @@ confirmBtn.addEventListener('click', () => {
       .then((alertElement) => {
         alertElement.present()
       }) */
-      alert('Please enter a valid course and review')
+      alert('Please enter a valid course and rating')
     return
   }
 
